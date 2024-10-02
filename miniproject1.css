@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: auto;
+    padding: auto;
+    width: 100%;
+}
+.main{
+    margin: auto;
+    width: 100%;
+    background: linear-gradient(to top,rgba(0,0,0,0.4)50%,rgba(0,0,0,0.4)50%),url(cody-scott-milewski-aCnkRlBD0i4-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: white;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left:20px;
+    float: left;
+    padding-top:10px;
+    position :relative;
+}
+.logo::before{
+    content: "hi";
+    position:absolute;
+    background:#ff7200;
+    height:200px;
+    width:0;
+    bottom:-2px;
+    left:0;
+    transition: 1s width ease;
+    border-radius: 10px;
+}
+.logo:hover::before{
+    color: white;
+    width: 100%;
+    opacity: 1;
+}
+.menu{
+    width:400px;
+    float:left;
+    height: 70px;
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 20px;
+    position:relative;
+    width: max-content;
+}
+ul li::before{
+    content: "";
+    position:absolute;
+    background:#ff7200;
+    height:2px;
+    width:0;
+    bottom:-2px;
+    left:0;
+    transition: 1s width ease;
+    border-radius: 10px;
+}
+ul li::after{
+    content: "";
+    position: absolute;
+    background: #ff7200;
+    height: 2px;
+    width:0;
+    bottom:-2px;
+    right:0;
+    transition: 1s width ease;
+    border-radius: 10px;
+}
+ul li:hover::before,
+ul li:hover::after{
+    width: 100%;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.4s ease-in-out;
+}
+ul li a:hover{
+    color: #ff7200;
+}
+.search{
+    width:330px;
+    float: left;
+    margin-left: 270px;
+}
+.srch{
+    font-family: 'Times New Roman', Times, serif;
+    width: 200px;
+    height: 40px;
+    background:transparent;
+    border:2px solid #ff7200;
+    margin-top: 13px;
+    color: white;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #ff7200;
+    border: 2px solid #ff7200;
+    margin-top: 13px;
+    color: white;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.btn:focus{
+    outline: none;
+}
+.srch:focus{
+    outline:none;
+}
+.content{
+    width:1200px;
+    height: auto;
+    margin: auto;
+    position: relative;
+    color: white;
+}
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-family:Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    border: 1px solid #ff7200;
+    width: 50%;
+    margin-bottom:5px;
+
+}
+.content h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+.content .cn{
+    width:160px;
+    height:40px;
+    background: #ff7200;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .3s ease;
+    border-radius: 8px;
+}
+.content .cn a{
+    text-decoration: none;
+    color: black;
+    transition:.3s ease;
+}
+.cn:hover{
+    background-color: white;
+}
+.content span{
+    color:#ff7200;
+    font-size: 60px;
+}
+.form{
+    width:250px;
+    height: 380px;
+    background:linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%);
+    position: absolute;
+    top:-20px;
+    left:870px;
+    border-radius: 10px;
+    padding: 25px;
+    backdrop-filter: blur(0.8px);
+    justify-content: center;
+    border: 1px solid #ff7200;
+}
+.form h2{
+    width:220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #ff7200;
+    font-size: 22px;
+    background-color: white;
+    border-radius: 10px;
+    margin:2px;
+    padding: 8px;
+    justify-content: center;
+}
+.form input{
+    width: 240px;
+    height: 30px;
+    background:transparent;
+    border: 1px solid #ff7200;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: white ;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family:sans-serif;
+    outline: none;
+}
+.form input:focus{
+    outline:none;
+
+}
+::placeholder{
+    color:white;
+    font-family: Arial;
+}
+.btnn{
+    width:240px;
+    height:40px;
+    background-color: #ff7200;
+    border:none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor:pointer;
+    transition: .3s ease;
+}
+.btnn a{
+    text-decoration: none;
+    color: white;
+}
+.btnn:hover{
+    background: transparent;
+    border : 1px solid #ff7200;
+    font-weight: bold;
+}
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+.form .link a{
+    text-decoration: none;
+    color: #ff7200;
+    text-align: center;
+}
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.icons a{
+    text-decoration: none;
+    color: white;
+}
+.icons ion-icon{
+    color: white;
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top:5px
+}
+.icons ion-icon:hover{
+    color: #ff7200;
+    transition: .3s ease-in-out;
+}
